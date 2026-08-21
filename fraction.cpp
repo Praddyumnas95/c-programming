@@ -2,24 +2,23 @@
 using namespace std;
 class fraction{
 public:
-   float numerator;
-   float denominator;
-   void input(){
-   cin>>numerator;
-   cin>>denominator;
-   }
-   void add(fraction f1,fraction f2){
-   numerator=(f1.numerator*f2.denominator)+(f1.denominator*f2.numerator);
-   denominator=f1.denominator*f2.denominator;
-   }
-   void sub(fraction f1,fraction f2){
-   numerator=(f1.numerator*f2.denominator)-(f1.denominator*f2.numerator);
-   denominator=f1.denominator*f2.denominator;
-   
-   }
-   void display(){
-   cout<<numerator<<"/"<<denominator<<endl;
-   }
+float numerator;
+float denominator;
+void input(){
+cin>>numerator;
+cin>>denominator;
+}
+void add(fraction f1,fraction f2){
+numerator=(f1.numerator*f2.denominator)+(f1.denominator*f2.numerator);
+denominator=f1.denominator*f2.denominator;
+}
+void sub(fraction f1,fraction f2){
+numerator=(f1.numerator*f2.denominator)-(f1.denominator*f2.numerator);
+denominator=f1.denominator*f2.denominator;
+}
+void display(){
+cout<<numerator<<cpp"/"<<denominator<<endl;
+}
 };
 int main(){
 fraction f1,f2,f3;
